@@ -11,7 +11,7 @@ app = Flask(__name__)
 @app.route('/diabetic',methods=['POST'])
 def diabetic():
 
-    Pregnancies=request.form.get('Pregnancies')
+    pregnancies=request.form.get('Pregnancies')
     glucose=request.form.get('glucose')
     bp=request.form.get('bp')
     skin=request.form.get('skin')
@@ -20,7 +20,7 @@ def diabetic():
     pedigree=request.form.get('pedigree')
     age=request.form.get('age')
 
-    list = [Pregnancies,glucose,bp,skin,insulin,bmi,pedigree,age]
+    list = [pregnancies,glucose,bp,skin,insulin,bmi,pedigree,age]
 
     #print(list)
     #from sklearn.preprocessing import LabelEncoder
